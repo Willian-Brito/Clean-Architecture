@@ -1,11 +1,86 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Core.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Core.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Core.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Application.dll": {}
+        }
+      },
+      "Core.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Core.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Domain.dll": {}
+        }
+      },
+      "Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Core.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infra.Data.dll": {}
+        }
+      },
+      "Infra.IoC/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Core.Application": "1.0.0",
+          "Core.Domain": "1.0.0",
+          "Infra.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infra.IoC.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infra.IoC.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Core.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Core.Application/Core.Application.csproj",
+      "msbuildProject": "../../Core/Core.Application/Core.Application.csproj"
+    },
+    "Core.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Core.Domain/Core.Domain.csproj",
+      "msbuildProject": "../../Core/Core.Domain/Core.Domain.csproj"
+    },
+    "Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastucture/Infra.Data/Infra.Data.csproj",
+      "msbuildProject": "../../Infrastucture/Infra.Data/Infra.Data.csproj"
+    },
+    "Infra.IoC/1.0.0": {
+      "type": "project",
+      "path": "../../Infrastucture/Infra.IoC/Infra.IoC.csproj",
+      "msbuildProject": "../../Infrastucture/Infra.IoC/Infra.IoC.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Infra.IoC >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/h1s0k4/.nuget/packages/": {}
@@ -31,7 +106,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Infrastucture/Infra.IoC/Infra.IoC.csproj": {
+              "projectPath": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Infrastucture/Infra.IoC/Infra.IoC.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -1,11 +1,68 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Core.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Core.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Core.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Application.dll": {}
+        }
+      },
+      "Core.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/Core.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Core.Domain.dll": {}
+        }
+      },
+      "Infra.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Core.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Infra.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Infra.Data.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Core.Application/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Core.Application/Core.Application.csproj",
+      "msbuildProject": "../../Core/Core.Application/Core.Application.csproj"
+    },
+    "Core.Domain/1.0.0": {
+      "type": "project",
+      "path": "../../Core/Core.Domain/Core.Domain.csproj",
+      "msbuildProject": "../../Core/Core.Domain/Core.Domain.csproj"
+    },
+    "Infra.Data/1.0.0": {
+      "type": "project",
+      "path": "../Infra.Data/Infra.Data.csproj",
+      "msbuildProject": "../Infra.Data/Infra.Data.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Core.Application >= 1.0.0",
+      "Core.Domain >= 1.0.0",
+      "Infra.Data >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/home/h1s0k4/.nuget/packages/": {}
@@ -31,7 +88,17 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/Core.Application.csproj": {
+              "projectPath": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/Core.Application.csproj"
+            },
+            "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Domain/Core.Domain.csproj": {
+              "projectPath": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Domain/Core.Domain.csproj"
+            },
+            "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Infrastucture/Infra.Data/Infra.Data.csproj": {
+              "projectPath": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Infrastucture/Infra.Data/Infra.Data.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

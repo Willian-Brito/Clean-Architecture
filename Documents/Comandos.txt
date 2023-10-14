@@ -37,5 +37,6 @@ WebApp - Dependencia com projeto Infra.IoC
 Criar Solução: dotnet new sln --name CleanArch
 Criar Projeto: dotnet new classlib --name Core.Domain
 Adiconar Projeto na Solution: dotnet sln CleanArch.sln add ./Core/Core.Domain/Core.Domain.csproj
+Rodar Projeto: dotnet run --project ./Presentation/WepApp/WepApp.csproj
 
 ******************************************************************************************
