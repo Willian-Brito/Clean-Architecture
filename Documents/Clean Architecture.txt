@@ -1,0 +1,101 @@
+
+
+                                 **********************
+			         * CLEAN ARCHITECTURE *
+                                 **********************
+			
+
+		 
+		         |--------------------------------------|
+		         |                                      |
+			 |                                      |
+	                 |                                      |	                   
+                         |         |-------------------|        |
+	                 |         |                   |        |   
+	                 |         |      Domain       |        |   
+                         |         |                   |        |
+ 	                 |         |-------------------|        |
+			 |		                        |
+		         |		                        |
+	                 |            Infraestrutura            |
+	                 |--------------------------------------|
+
+
+                         |--------------------------------------|
+	                 |                                      |
+	                 |   |------------------------------|   |
+                         |   |                              |   |
+	                 |   |   |----------------------|   |   |
+                         |   |   |                      |   |   |
+	                 |   |   |   |--------------|   |   |   |
+	                 |   |   |   |              |   |   |   |
+                         |   |   |   |   Entities   |   |   |   |
+ 	                 |   |   |   |--------------|   |   |   |
+                         |   |   |     Casos de Uso     |   |   |
+                         |   |   |----------------------|   |   |
+  	                 |   |            Adapters          |   |
+	                 |   |------------------------------|   |
+	                 |             Infraestrutura           |
+	                 |--------------------------------------|
+
+
+Agora a camada de domínio foi subdividida em Entidades e Casos de uso, e uma camada
+adaptadora (Adapters) forma a fronteira entre o domínio e a camada de infraestrutura. 
+
+Vejamos cada termo usado com mais detalhes :
+
+
+
+# ENTIDADES (ENTITIES)
+
+As Entidades (Entities) representam um conjunto de regras de negócio relacionadas que 
+são críticas para que a aplicação funcione corretamente para o seu propósito.
+No contexto da ASP .NET Core e da linguagem C# as regras das entidades seriam agrupadas 
+como métodos em classes, e,  mesmo que não houve nenhuma aplicação essas regras ainda 
+existiriam.
+
+O que é importante destacar aqui é que as entidades não conhecem nada sobre as demais 
+camadas. Elas não possuem nenhuma dependência, ou seja, elas não usam os nomes de nenhuma 
+outra classe ou componente que estejam nas camadas externas.
+
+
+
+# OS CASOS DE USO (USE CASES)
+
+Os casos de uso são as regras de negócios para um aplicativo específico. Eles dizem como 
+automatizar o sistema e isso determina o comportamento do aplicativo.
+
+Os casos de uso interagem e dependem das entidades, mas não sabem nada sobre as camadas mais 
+distantes. Eles não se importam se é uma página web ou um aplicativo para Celular. Eles não se 
+importam se os dados estão armazenados na nuvem ou em um banco de dados SQL Server ou SQLite 
+local.
+
+Essa camada define interfaces ou possuem classes abstratas que as camadas externas podem usar.
+
+
+
+# ADAPTADORES (ADAPTERS)
+
+Os adaptadores, também chamados de adaptadores de interface, são os tradutores entre o domínio 
+e a infraestrutura. Eles pegam dados de entrada da Interface com o usuário - UI, e os ajustam 
+em um formato que seja conveniente para os casos de uso e entidades.
+
+Em seguida, eles pegam a saída dos casos de uso e entidades e a ajustam em um formato que seja 
+conveniente para exibir na interface com o usuário ou salvar em um banco de dados.
+
+
+
+# INFRAESTRUTURA (INFRASTRUCTURE)
+
+Essa camada é para onde vão todos os componentes de  entrada e saída ou I/O, a interface com o 
+usuário - IU, o banco de dados, os frameworks, os dispositivos, etc.
+
+É a camada mais volátil visto que as coisas nesta camada podem mudar, e, por isso, elas são 
+mantidas o mais longe possível das camadas de domínio mais estáveis.
+
+Como eles são mantidos separados, é relativamente fácil fazer alterações ou trocar um componente 
+por outro.
+
+LINK: http://www.macoratti.net/20/10/aspnc_arqclean1.htm#:~:text=Princ%C3%ADpio%20Comum%20de%20Fechamento%20
+
+

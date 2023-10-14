@@ -1,0 +1,41 @@
+			
+								######################
+								# CLEAN ARCHITECTURE #
+								######################
+			
+# ESTRUTURA
+
+[+] Core
+	* Core.Domain - Modelo de domínio, regras de negocio, interfaces
+	* Core.Application - Regras de domínio da aplicação, fluxos, mapeamentos, serviços, DTOs, CQRS
+
+[+] Infrastucture	
+	* Infra.Data - EF Core, Contexto, Configurações, Migrations, Repository
+	* Infra.IoC - Injeção de dependencia, registro dos serviços, tempo de vida
+
+[+] Presentation	
+	* WebApp - MVC, Controllers, Views, Filtros, ViewModels
+
+-> O Projeto WebUI é do tipo ASP.NET Core WebApp (MVC)
+-> Os Demais projetos serão do tipo Class Library
+
+******************************************************************************************
+
+# DEPENDENCIA
+
+Core.Domain - Não possui nehuma dependencia
+Core.Application - Dependencia com projeto Domain
+Infra.Data - Dependencia com projeto Domain
+Infra.IoC - Dependencia com projeto Domain, Application, Infra.Data
+WebApp - Dependencia com projeto Infra.IoC
+
+
+******************************************************************************************
+
+# COMANDOS
+
+Criar Solução: dotnet new sln --name CleanArch
+Criar Projeto: dotnet new classlib --name Core.Domain
+Adiconar Projeto na Solution: dotnet sln CleanArch.sln add ./Core/Core.Domain/Core.Domain.csproj
+
+******************************************************************************************
