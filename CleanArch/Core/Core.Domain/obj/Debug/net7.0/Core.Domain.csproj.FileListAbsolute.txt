@@ -1,0 +1,11 @@
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Domain/bin/Debug/net7.0/Core.Domain.deps.json
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Domain/bin/Debug/net7.0/Core.Domain.dll
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Domain/bin/Debug/net7.0/Core.Domain.pdb
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Domain/obj/Debug/net7.0/Core.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Domain/obj/Debug/net7.0/Core.Domain.AssemblyInfoInputs.cache
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Domain/obj/Debug/net7.0/Core.Domain.AssemblyInfo.cs
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Domain/obj/Debug/net7.0/Core.Domain.csproj.CoreCompileInputs.cache
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Domain/obj/Debug/net7.0/Core.Domain.dll
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Domain/obj/Debug/net7.0/refint/Core.Domain.dll
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Domain/obj/Debug/net7.0/Core.Domain.pdb
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Domain/obj/Debug/net7.0/ref/Core.Domain.dll

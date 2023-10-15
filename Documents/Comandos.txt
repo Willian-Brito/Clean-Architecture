@@ -34,9 +34,11 @@ WebApp - Dependencia com projeto Infra.IoC
 
 # COMANDOS
 
-Criar Solução: dotnet new sln --name CleanArch
-Criar Projeto: dotnet new classlib --name Core.Domain
-Adiconar Projeto na Solution: dotnet sln CleanArch.sln add ./Core/Core.Domain/Core.Domain.csproj
-Rodar Projeto: dotnet run --project ./Presentation/WepApp/WepApp.csproj
+-> Criar Solução: 						dotnet new sln --name CleanArch
+-> Criar Projeto: 						dotnet new classlib --name Core.Domain
+-> Adiconar Projeto na Solution: 		dotnet sln CleanArch.sln add ./Core/Core.Domain/Core.Domain.csproj
+-> Rodar Projeto: 						dotnet run --project ./Presentation/WepApp/WepApp.csproj
+-> Adicionando Dependencia no projeto: 	dotnet add ./Core/Core.Application/Core.Application.csproj reference ./Core/Core.Domain/Core.Domain.csproj 
+-> Adicionando Pacotes: dotnet add package FluentAssertions
 
 ******************************************************************************************
