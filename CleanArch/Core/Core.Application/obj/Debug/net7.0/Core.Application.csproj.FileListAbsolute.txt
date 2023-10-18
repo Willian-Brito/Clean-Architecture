@@ -1,0 +1,15 @@
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/bin/Debug/net7.0/Core.Application.deps.json
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/bin/Debug/net7.0/Core.Application.dll
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/bin/Debug/net7.0/Core.Application.pdb
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/bin/Debug/net7.0/Core.Domain.dll
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/bin/Debug/net7.0/Core.Domain.pdb
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/obj/Debug/net7.0/Core.Application.csproj.AssemblyReference.cache
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/obj/Debug/net7.0/Core.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/obj/Debug/net7.0/Core.Application.AssemblyInfoInputs.cache
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/obj/Debug/net7.0/Core.Application.AssemblyInfo.cs
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/obj/Debug/net7.0/Core.Application.csproj.CoreCompileInputs.cache
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/obj/Debug/net7.0/Core.Application.csproj.CopyComplete
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/obj/Debug/net7.0/Core.Application.dll
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/obj/Debug/net7.0/refint/Core.Application.dll
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/obj/Debug/net7.0/Core.Application.pdb
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Core/Core.Application/obj/Debug/net7.0/ref/Core.Application.dll

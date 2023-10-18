@@ -11,7 +11,9 @@
 
 [+] Infrastucture	
 	* Infra.Data - EF Core, Contexto, Configurações, Migrations, Repository
-	* Infra.IoC - Injeção de dependencia, registro dos serviços, tempo de vida
+	
+[+] Adapters
+	* Adapter.IoC - Injeção de dependencia, registro dos serviços, tempo de vida
 
 [+] Presentation	
 	* WebApp - MVC, Controllers, Views, Filtros, ViewModels
@@ -26,7 +28,7 @@
 Core.Domain - Não possui nehuma dependencia
 Core.Application - Dependencia com projeto Domain
 Infra.Data - Dependencia com projeto Domain
-Infra.IoC - Dependencia com projeto Domain, Application, Infra.Data
+Adapter.IoC - Dependencia com projeto Domain, Application, Infra.Data
 WebApp - Dependencia com projeto Infra.IoC
 
 
@@ -39,6 +41,19 @@ WebApp - Dependencia com projeto Infra.IoC
 -> Adiconar Projeto na Solution: 		dotnet sln CleanArch.sln add ./Core/Core.Domain/Core.Domain.csproj
 -> Rodar Projeto: 						dotnet run --project ./Presentation/WepApp/WepApp.csproj
 -> Adicionando Dependencia no projeto: 	dotnet add ./Core/Core.Application/Core.Application.csproj reference ./Core/Core.Domain/Core.Domain.csproj 
--> Adicionando Pacotes: dotnet add package FluentAssertions
 
 ******************************************************************************************
+
+# DEPENDENCIAS EXTERNAS
+
+[+] Test: 
+	* dotnet add package FluentAssertions
+	
+[+] Data: 
+	* dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+	* dotnet add package Microsoft.EntityFrameworkCore.Tools
+	* dotnet add package Microsoft.EntityFrameworkCore.Design
+
+******************************************************************************************
+
+

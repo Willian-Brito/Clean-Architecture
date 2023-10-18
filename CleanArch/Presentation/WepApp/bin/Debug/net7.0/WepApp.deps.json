@@ -7,14 +7,68 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "WepApp/1.0.0": {
+        "dependencies": {
+          "Adapter.IoC": "1.0.0"
+        },
         "runtime": {
           "WepApp.dll": {}
+        }
+      },
+      "Adapter.IoC/1.0.0": {
+        "dependencies": {
+          "Core.Application": "1.0.0",
+          "Core.Domain": "1.0.0",
+          "Infra.Data": "1.0.0"
+        },
+        "runtime": {
+          "Adapter.IoC.dll": {}
+        }
+      },
+      "Core.Application/1.0.0": {
+        "dependencies": {
+          "Core.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Core.Application.dll": {}
+        }
+      },
+      "Core.Domain/1.0.0": {
+        "runtime": {
+          "Core.Domain.dll": {}
+        }
+      },
+      "Infra.Data/1.0.0": {
+        "dependencies": {
+          "Core.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Infra.Data.dll": {}
         }
       }
     }
   },
   "libraries": {
     "WepApp/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Adapter.IoC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Core.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Core.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Infra.Data/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

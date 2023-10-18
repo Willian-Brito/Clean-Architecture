@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Infrastucture\Infra.IoC\Infra.IoC.csproj" />
+    <ProjectReference Include="..\..\Adapters\Adapter.IoC\Adapter.IoC.csproj" />
   </ItemGroup>
 
   <PropertyGroup>
