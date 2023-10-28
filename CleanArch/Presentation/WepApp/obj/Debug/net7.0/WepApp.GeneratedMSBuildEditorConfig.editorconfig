@@ -16,12 +16,8 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp
 build_property._RazorSourceGeneratorDebug = 
 
-[/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+[/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/Views/Shared/Error.cshtml]

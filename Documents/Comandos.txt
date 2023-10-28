@@ -54,6 +54,12 @@ WebApp - Dependencia com projeto Infra.IoC
 	* dotnet add package Microsoft.EntityFrameworkCore.Tools
 	* dotnet add package Microsoft.EntityFrameworkCore.Design
 
+[+] Application
+	* dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
+	
+[+] Adapters
+	* dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
+	
 ******************************************************************************************
 
 # MIGRATIONS

@@ -3,9 +3,9 @@
 public sealed class Category : EntityBase
 {
     #region Propriedades da Classe
-    public int IdCategory { get; private set; }
-    public string Name { get; private set; }
-    public ICollection<Product> Products { get; set; }
+    public int? IdCategory { get; private set; }
+    public string? Name { get; private set; }
+    public ICollection<Product>? Products { get; set; }
     #endregion
 
     #region Construtor
