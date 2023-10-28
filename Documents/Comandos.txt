@@ -56,4 +56,15 @@ WebApp - Dependencia com projeto Infra.IoC
 
 ******************************************************************************************
 
+# MIGRATIONS
+
+Instalar: 				dotnet tool install --global dotnet-ef
+Adicionar Migration: 	dotnet ef migrations add <nome>
+Adicionar Migration: 	dotnet ef migrations add <nome> --project Infra.Data -s WebApp -c ApplicationDbContext --verbose
+Confirmar Alterações: 	dotnet ef database update
+Remover Migration: 		dotnet ef migrations remove
+Listar Migration:		dotnet ef migrations list
+
+
+******************************************************************************************
 

@@ -13,3 +13,5 @@
 /home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Infrastucture/Infra.Data/obj/Debug/net7.0/refint/Infra.Data.dll
 /home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Infrastucture/Infra.Data/obj/Debug/net7.0/Infra.Data.pdb
 /home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Infrastucture/Infra.Data/obj/Debug/net7.0/ref/Infra.Data.dll
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Infrastucture/Infra.Data/bin/Debug/net7.0/Infra.Data.runtimeconfig.json
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Infrastucture/Infra.Data/obj/Debug/net7.0/Infra.Data.genruntimeconfig.cache

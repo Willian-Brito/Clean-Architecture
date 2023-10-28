@@ -11,6 +11,7 @@ public class ApplicationDbContext : DbContext
     #endregion
 
     #region Construtor
+    public ApplicationDbContext(){ }
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options){ }
     #endregion
 
@@ -19,6 +20,17 @@ public class ApplicationDbContext : DbContext
     {
         base.OnModelCreating(builder);
         builder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
+    }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        if(!optionsBuilder.IsConfigured)
+        {
+            var connectionString = "Server=localhost; Database=CleanArchDB; User Id=sa; Password=sql@2019; TrustServerCertificate=True;";
+
+            base.OnConfiguring(optionsBuilder);
+            optionsBuilder.UseSqlServer(connectionString);
+        }        
     }
     #endregion
 }
