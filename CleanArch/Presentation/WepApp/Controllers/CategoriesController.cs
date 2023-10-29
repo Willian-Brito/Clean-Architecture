@@ -1,7 +1,7 @@
-﻿using Core.Application;
+﻿using Core.Application.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WepApp;
+namespace WepApp.Controllers;
 
 public class CategoriesController : Controller
 {

@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
+using Core.Application.DTOs;
 using Core.Domain;
+using Core.Domain.Entities;
 
-namespace Core.Application;
+namespace Core.Application.Mappings;
 
 public class DomainToDTOMappingProfile : Profile
 {

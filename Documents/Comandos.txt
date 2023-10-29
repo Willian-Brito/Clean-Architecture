@@ -55,10 +55,12 @@ WebApp - Dependencia com projeto Infra.IoC
 	* dotnet add package Microsoft.EntityFrameworkCore.Design
 
 [+] Application
-	* dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
+	* dotnet add package AutoMapper
+	* dotnet add package MediatR
 	
-[+] Adapters
+[+] IoC
 	* dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
+	* dotnet add package MediatR
 	
 ******************************************************************************************
 

@@ -1,9 +1,10 @@
-using Core.Domain;
+using Core.Domain.Entities;
+using Core.Domain.Validations;
 using FluentAssertions;
 
 namespace Test.Core.Domain;
 
-public class CategoryUnitTest1
+public class CategoryUnitTest
 {
     [Fact(DisplayName = "Não deve criar categoria quando o idCategory for negativo")]
     public void CreateCategory_NegativeIdValue_DomainExceptionInvalidId()

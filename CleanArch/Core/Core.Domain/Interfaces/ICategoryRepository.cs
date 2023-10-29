@@ -1,4 +1,6 @@
-﻿namespace Core.Domain;
+﻿using Core.Domain.Entities;
+
+namespace Core.Domain.Interfaces;
 
 public interface ICategoryRepository
 {

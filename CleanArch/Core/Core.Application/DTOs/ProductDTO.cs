@@ -2,8 +2,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using Core.Domain;
+using Core.Domain.Entities;
 
-namespace Core.Application;
+namespace Core.Application.DTOs;
 
 public class ProductDTO
 {

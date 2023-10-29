@@ -1,7 +1,9 @@
-﻿using Core.Domain;
+﻿using Core.Domain.Entities;
+using Core.Domain.Interfaces;
+using Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infra.Data;
+namespace Infra.Data.Repositories;
 
 public class CategoryRepository : ICategoryRepository
 {

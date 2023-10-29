@@ -1,32 +1,42 @@
 ﻿
 using AutoMapper;
-using Core.Domain;
-using Microsoft.VisualBasic;
+using MediatR;
+using Core.Application.DTOs;
+using Core.Application.Interfaces;
+using Core.Application.Products.Commands;
+using Core.Application.Products.Queries;
 
-namespace Core.Application;
+namespace Core.Application.Services;
 
 public class ProductService : IProductService
 {
     #region Propriedades da Classe
-    private IProductRepository _productRepository;
+    private IMediator _mediator;
     private IMapper _mapper;
     #endregion
 
     #region Construtor
-    public ProductService(IProductRepository productRepository, IMapper mapper)
+    public ProductService(IMapper mapper, IMediator mediator)
     {
-        _productRepository = productRepository ?? throw new ArgumentException(nameof(productRepository));
+        _mediator = mediator;
         _mapper = mapper;
     }
     #endregion
 
     #region Metodos
 
+    #region Queries
+
     #region GetById
     public async Task<ProductDTO> GetById(int? idProduct)
     {
-        var productEntity = await _productRepository.GetByIdAsync(idProduct);
-        var productDTO = _mapper.Map<ProductDTO>(productEntity);
+        var productByIdQuery = new GetProductByIdQuery(idProduct);
+
+        if (productByIdQuery == null)
+            throw new ApplicationException("Produto não pode ser carregado!");
+
+        var result = await _mediator.Send(productByIdQuery);
+        var productDTO = _mapper.Map<ProductDTO>(result);
 
         return productDTO;
     }
@@ -35,46 +45,67 @@ public class ProductService : IProductService
     #region GetProducts
     public async Task<IEnumerable<ProductDTO>> GetProducts()
     {
-        var productsEntity = await _productRepository.GetProductsAsync();
-        var productDTO = _mapper.Map<IEnumerable<ProductDTO>>(productsEntity);
+        var productQuery = new GetProductQuery();
+
+        if (productQuery == null)
+            throw new ApplicationException("Produto não pode ser carregado!");
+
+        var result = await _mediator.Send(productQuery);
+        var productDTO = _mapper.Map<IEnumerable<ProductDTO>>(result);
 
         return productDTO;
     }
     #endregion
 
     #region GetProductCategory
-    public async Task<ProductDTO> GetProductCategory(int idProduct)
-    {
-        var productEntity = await _productRepository.GetProductByCategoryAsync(idProduct);
-        var productDTO = _mapper.Map<ProductDTO>(productEntity);
-    
-        return productDTO;
-    }
+    // public async Task<ProductDTO> GetProductCategory(int idProduct)
+    // {
+    //     var productByIdQuery = new GetProductByIdQuery(idProduct);
+
+    //     if (productByIdQuery == null)
+    //         throw new ApplicationException("Produto não pode ser carregado!");
+
+        
+    //     var result = await _mediator.Send(productByIdQuery);
+    //     var productDTO = _mapper.Map<ProductDTO>(result);
+
+    //     return productDTO;
+    // }
     #endregion
+
+    #endregion
+
+    #region Commands
 
     #region Add
     public async Task Add(ProductDTO productDTO)
     {
-        var productEntity = _mapper.Map<Product>(productDTO);
-        await _productRepository.CreateAsync(productEntity);
+        var productCreateCommand = _mapper.Map<ProductCreateCommand>(productDTO);
+        await _mediator.Send(productCreateCommand);
     }
     #endregion
 
     #region Remove
     public async Task Remove(int? idProduct)
     {
-        var productEntity = _productRepository.GetByIdAsync(idProduct).Result;
-        await _productRepository.DeleteAsync(productEntity);
+        var productRemoveCommand = new ProductRemoveCommand(idProduct);
+
+        if(productRemoveCommand == null)
+            throw new ApplicationException("Produto não pode ser carregado!");
+        
+        await _mediator.Send(productRemoveCommand);
     }
     #endregion
 
     #region Update
     public async Task Update(ProductDTO productDTO)
     {
-        var productEntity = _mapper.Map<Product>(productDTO);
-        await _productRepository.UpdateAsync(productEntity);
+        var productUpdateCommand = _mapper.Map<ProductUpdateCommand>(productDTO);
+        await _mediator.Send(productUpdateCommand);
     }
     #endregion
 
+    #endregion
+    
     #endregion
 }

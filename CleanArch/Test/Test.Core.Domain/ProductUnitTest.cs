@@ -1,9 +1,10 @@
-﻿using Core.Domain;
+﻿using Core.Domain.Entities;
+using Core.Domain.Validations;
 using FluentAssertions;
 
 namespace Test.Core.Domain;
 
-public class ProductUnitTest1
+public class ProductUnitTest
 {
     #region IdProduct
     [Fact(DisplayName = "Não deve criar produto quando o idProduct for negativo")]

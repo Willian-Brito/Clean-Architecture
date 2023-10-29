@@ -7,6 +7,7 @@ namespace Infra.Data.Migrations
     /// <inheritdoc />
     public partial class SeedProducts : Migration
     {
+        /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.Sql("INSERT INTO Products (Name, Description, Price, Stock, Image, IdCategory, CreatedDate) " +
@@ -22,6 +23,7 @@ namespace Infra.Data.Migrations
                                     $"VALUES ('Calculadora escolar', 'Calculadora simples', 15.39,20, 'calculadora.jpg', 2, '{DateTime.Now.ToString("yyyy-MM-ddTHH:mm:ss")}')");
         }
 
+        /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.Sql("DELETE Products");

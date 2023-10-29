@@ -1,8 +1,8 @@
-﻿using Core.Domain;
+﻿using Core.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Infra.Data;
+namespace Infra.Data.EntitiesConfiguration;
 
 public class ProductConfiguration : IEntityTypeConfiguration<Product>
 {

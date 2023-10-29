@@ -1,10 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
   <ItemGroup>
-    <Content Remove="Views/Products/Index.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\..\Adapters\Adapter.IoC\Adapter.IoC.csproj" />
   </ItemGroup>
 
@@ -15,19 +11,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <_ContentIncludedByDefault Remove="Views/Products/Index.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="Views/Products/Index.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Views/Categories/" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Views/Products/Index.cshtml" />
+    <Folder Include="Views/Products/" />
   </ItemGroup>
 
 </Project>

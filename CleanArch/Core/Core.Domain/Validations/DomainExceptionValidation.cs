@@ -1,4 +1,4 @@
-﻿namespace Core.Domain;
+﻿namespace Core.Domain.Validations;
 
 public class DomainExceptionValidation : Exception
 {

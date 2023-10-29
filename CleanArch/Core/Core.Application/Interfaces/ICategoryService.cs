@@ -1,4 +1,6 @@
-﻿namespace Core.Application;
+﻿using Core.Application.DTOs;
+
+namespace Core.Application.Interfaces;
 
 public interface ICategoryService
 {

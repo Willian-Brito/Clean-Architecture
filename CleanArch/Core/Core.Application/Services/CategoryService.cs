@@ -1,8 +1,11 @@
 ﻿
 using AutoMapper;
-using Core.Domain;
+using Core.Application.DTOs;
+using Core.Application.Interfaces;
+using Core.Domain.Entities;
+using Core.Domain.Interfaces;
 
-namespace Core.Application;
+namespace Core.Application.Services;
 
 public class CategoryService : ICategoryService
 {

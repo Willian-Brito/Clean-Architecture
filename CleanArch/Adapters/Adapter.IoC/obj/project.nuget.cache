@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "U/OqXyGBs3eY+RUD57FOdb94B7ItAwt3tMm21amJ+5X0lwC4uYi3fbYwlK+LY3cK/e5ZnzKr2I27M8wizNLwlA==",
+  "dgSpecHash": "tO5nIzSNwFvUd9juBTtsyeUgrT9E9J/hX0cz0tIOmI607wWQEp/rBrrc/WlSOv0EXVadYTU2Eer5E6lHp5yTBA==",
   "success": true,
   "projectFilePath": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Adapters/Adapter.IoC/Adapter.IoC.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,8 @@
     "/home/h1s0k4/.nuget/packages/automapper.extensions.microsoft.dependencyinjection/12.0.1/automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "/home/h1s0k4/.nuget/packages/azure.core/1.25.0/azure.core.1.25.0.nupkg.sha512",
     "/home/h1s0k4/.nuget/packages/azure.identity/1.7.0/azure.identity.1.7.0.nupkg.sha512",
+    "/home/h1s0k4/.nuget/packages/mediatr/12.1.1/mediatr.12.1.1.nupkg.sha512",
+    "/home/h1s0k4/.nuget/packages/mediatr.contracts/2.0.1/mediatr.contracts.2.0.1.nupkg.sha512",
     "/home/h1s0k4/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "/home/h1s0k4/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
     "/home/h1s0k4/.nuget/packages/microsoft.data.sqlclient/5.1.1/microsoft.data.sqlclient.5.1.1.nupkg.sha512",

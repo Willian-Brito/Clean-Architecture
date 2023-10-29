@@ -1,7 +1,9 @@
-﻿using Core.Domain;
+﻿using Core.Domain.Entities;
+using Core.Domain.Interfaces;
+using Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infra.Data;
+namespace Infra.Data.Repositories;
 
 public class ProductRepository : IProductRepository
 {
@@ -39,16 +41,18 @@ public class ProductRepository : IProductRepository
     #region GetByIdAsync
     public async Task<Product> GetByIdAsync(int? idProduct)
     {
-        return await _productContext.Products.FindAsync(idProduct);
+        // return await _productContext.Products.FindAsync(idProduct);
+        return await _productContext.Products.Include(item => item.Category)
+                                             .SingleOrDefaultAsync(item => item.IdProduct == idProduct);
     }
     #endregion
 
     #region GetProductByCategoryAsync
-    public async Task<Product> GetProductByCategoryAsync(int? idProduct)
-    {
-        return await _productContext.Products.Include(item => item.Category)
-                                             .SingleOrDefaultAsync(item => item.IdProduct == idProduct);
-    }
+    // public async Task<Product> GetProductByCategoryAsync(int? idProduct)
+    // {
+    //     return await _productContext.Products.Include(item => item.Category)
+    //                                          .SingleOrDefaultAsync(item => item.IdProduct == idProduct);
+    // }
     #endregion
 
     #region GetProductsAsync

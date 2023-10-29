@@ -1,4 +1,6 @@
-﻿namespace Core.Domain;
+﻿using Core.Domain.Validations;
+
+namespace Core.Domain.Entities;
 
 public sealed class Category : EntityBase
 {
