@@ -1,6 +1,6 @@
 ﻿
 using AutoMapper;
-using Core.Application.DTOs;
+using Core.Application.DTOs.Categories;
 using Core.Application.Interfaces;
 using Core.Domain.Entities;
 using Core.Domain.Interfaces;
@@ -45,9 +45,9 @@ public class CategoryService : ICategoryService
     #endregion
 
     #region Add
-    public async Task Add(CategoryDTO categoryDTO)
+    public async Task Add(CategoryCreateDTO categoryCreateDTO)
     {
-        var categoryEntity = _mapper.Map<Category>(categoryDTO);
+        var categoryEntity = _mapper.Map<Category>(categoryCreateDTO);
         await _categoryRepository.CreateAsync(categoryEntity);
     }
     #endregion

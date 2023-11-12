@@ -1,4 +1,4 @@
-﻿using Core.Application.DTOs;
+﻿using Core.Application.DTOs.Products;
 
 namespace Core.Application.Interfaces;
 

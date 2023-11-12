@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using Core.Application.DTOs;
+using Core.Application.DTOs.Products;
 using Core.Application.Products.Commands;
 
 namespace Core.Application;

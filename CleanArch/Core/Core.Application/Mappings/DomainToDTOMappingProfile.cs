@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
-using Core.Application.DTOs;
+using Core.Application.DTOs.Categories;
+using Core.Application.DTOs.Products;
 using Core.Domain;
 using Core.Domain.Entities;
 
@@ -9,6 +10,7 @@ public class DomainToDTOMappingProfile : Profile
 {
     public DomainToDTOMappingProfile()
     {
+        CreateMap<Category, CategoryCreateDTO>().ReverseMap();
         CreateMap<Category, CategoryDTO>().ReverseMap();
         CreateMap<Product, ProductDTO>().ReverseMap();
     }

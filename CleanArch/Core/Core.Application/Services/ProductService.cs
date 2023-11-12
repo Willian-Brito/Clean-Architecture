@@ -1,7 +1,7 @@
 ﻿
 using AutoMapper;
 using MediatR;
-using Core.Application.DTOs;
+using Core.Application.DTOs.Products;
 using Core.Application.Interfaces;
 using Core.Application.Products.Commands;
 using Core.Application.Products.Queries;

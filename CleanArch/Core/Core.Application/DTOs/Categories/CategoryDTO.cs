@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Core.Application.DTOs;
+namespace Core.Application.DTOs.Categories;
 
 public class CategoryDTO
 {
