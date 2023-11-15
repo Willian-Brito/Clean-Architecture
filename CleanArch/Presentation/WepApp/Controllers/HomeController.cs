@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.Mvc;
-using WepApp.Models;
 
 namespace WepApp.Controllers;
 

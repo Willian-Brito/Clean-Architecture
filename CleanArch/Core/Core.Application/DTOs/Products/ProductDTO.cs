@@ -40,5 +40,5 @@ public class ProductDTO
     public Category? Category { get; set; }
 
     [DisplayName("Categorias")]
-    public int CategoryId { get; set; }
+    public int IdCategory { get; set; }
 }

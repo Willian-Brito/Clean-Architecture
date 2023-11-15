@@ -21,6 +21,7 @@ public class ProductCreateCommandHandler : IRequestHandler<ProductCreateCommand,
         if (product == null)
             throw new ApplicationException("Erro ao criar produto!");
             
+        product.IdCategory = request.IdCategory;
         return await _productRepository.CreateAsync(product);
     }
 }

@@ -13,6 +13,50 @@
       "PackagePath": "staticwebassets/favicon.ico"
     },
     {
+      "Id": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/wwwroot/favicon.ico.old",
+      "PackagePath": "staticwebassets/favicon.ico.old"
+    },
+    {
+      "Id": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/wwwroot/images/borracha.jpg",
+      "PackagePath": "staticwebassets/images/borracha.jpg"
+    },
+    {
+      "Id": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/wwwroot/images/caderno.jpg",
+      "PackagePath": "staticwebassets/images/caderno.jpg"
+    },
+    {
+      "Id": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/wwwroot/images/calculadora.jpg",
+      "PackagePath": "staticwebassets/images/calculadora.jpg"
+    },
+    {
+      "Id": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/wwwroot/images/cartilha.jpg",
+      "PackagePath": "staticwebassets/images/cartilha.jpg"
+    },
+    {
+      "Id": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/wwwroot/images/catalog.png",
+      "PackagePath": "staticwebassets/images/catalog.png"
+    },
+    {
+      "Id": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/wwwroot/images/catalogo.png",
+      "PackagePath": "staticwebassets/images/catalogo.png"
+    },
+    {
+      "Id": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/wwwroot/images/estojo.jpg",
+      "PackagePath": "staticwebassets/images/estojo.jpg"
+    },
+    {
+      "Id": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/wwwroot/images/logo.png",
+      "PackagePath": "staticwebassets/images/logo.png"
+    },
+    {
+      "Id": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/wwwroot/images/noimage.jpg",
+      "PackagePath": "staticwebassets/images/noimage.jpg"
+    },
+    {
+      "Id": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/wwwroot/images/noimage.png",
+      "PackagePath": "staticwebassets/images/noimage.png"
+    },
+    {
       "Id": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/wwwroot/js/site.js",
       "PackagePath": "staticwebassets/js/site.js"
     },

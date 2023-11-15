@@ -1,0 +1,82 @@
+@model Core.Application.DTOs.Products.ProductDTO
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<div>
+    <h2>@ViewData["Title"]</h2>
+</div>
+
+<div>
+
+    <hr />
+
+    <dl class="row">
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Image)
+        </dt>
+
+        <dd class="col-sm-10">
+            @if (!ViewBag.ImageExist) 
+            {
+                <img src="~/images/noimage.jpg" class="rounded-circle" height="300" width="300" asp-append-version="true" />
+            }
+            else
+            {
+                <img src="~/images/@Model.Image" class="rounded-circle" height="300" width="300" asp-append-version="true" />
+            }
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stock)
+        </dt>
+
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stock)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Category.Name)
+        </dt>
+
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Category.Name)
+        </dd>
+    </dl>
+
+
+    <form asp-action="Edit" method="post">
+
+        <input type="hidden" asp-for="IdProduct" /> 
+        <input type="submit" value="Edit" class="btn btn-primary">
+        <a asp-action="Index">Back to List</a>
+
+    </form>
+</div>
+
