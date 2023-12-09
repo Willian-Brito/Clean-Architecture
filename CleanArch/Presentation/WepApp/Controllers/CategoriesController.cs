@@ -1,9 +1,11 @@
 ﻿using Core.Application.DTOs.Categories;
 using Core.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WepApp.Controllers;
 
+[Authorize]
 public class CategoriesController : Controller
 {
     private readonly ICategoryService _categoryService;

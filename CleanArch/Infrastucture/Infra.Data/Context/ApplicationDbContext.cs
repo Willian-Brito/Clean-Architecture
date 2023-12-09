@@ -1,9 +1,11 @@
 ﻿using Core.Domain.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Infra.Data.Identity;
 
 namespace Infra.Data.Context;
 
-public class ApplicationDbContext : DbContext
+public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
     #region Propriedades da Classe
     public DbSet<Category> Categories { get; set; }

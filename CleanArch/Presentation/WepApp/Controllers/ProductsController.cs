@@ -1,5 +1,6 @@
 ﻿using Core.Application.DTOs.Products;
 using Core.Application.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
@@ -88,6 +89,8 @@ public class ProductsController : Controller
     #endregion
 
     #region Delete
+
+    [Authorize(Roles = "Admin")]
     [HttpGet()]
     public async Task<IActionResult> Delete(int? idProduct)
     {

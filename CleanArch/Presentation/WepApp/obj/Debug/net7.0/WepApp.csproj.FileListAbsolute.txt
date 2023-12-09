@@ -80,3 +80,4 @@
 /home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/obj/Debug/net7.0/WepApp.pdb
 /home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/obj/Debug/net7.0/WepApp.genruntimeconfig.cache
 /home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/obj/Debug/net7.0/ref/WepApp.dll
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WepApp/bin/Debug/net7.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
