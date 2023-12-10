@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oCogEAmyvScINa+6eZlta17MsO8sLfqAfE7kg+GdCxgutTEFno4qOqz/yB1E3XpVbLIl2XOzeAOtP8xqrVXWTw==",
+  "dgSpecHash": "fu5XTUpSi0apuWfvJWCB5O7n1eNM4pKdM537/ISHM4K39YEZ0hFfCQPmj0PS5zLVOBm0dKr+mJPrknTnNYht1Q==",
   "success": true,
   "projectFilePath": "/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Adapters/Adapter.IoC/Adapter.IoC.csproj",
   "expectedPackageFiles": [

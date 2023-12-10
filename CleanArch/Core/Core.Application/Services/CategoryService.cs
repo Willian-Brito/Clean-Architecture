@@ -45,10 +45,12 @@ public class CategoryService : ICategoryService
     #endregion
 
     #region Add
-    public async Task Add(CategoryCreateDTO categoryCreateDTO)
+    public async Task Add(CategoryDTO categoryDTO)
     {
-        var categoryEntity = _mapper.Map<Category>(categoryCreateDTO);
+        var categoryEntity = _mapper.Map<Category>(categoryDTO);
         await _categoryRepository.CreateAsync(categoryEntity);
+        
+        categoryDTO.IdCategory = categoryEntity.IdCategory;
     }
     #endregion
 

@@ -1,12 +1,15 @@
 using Adapter.IoC;
 using Core.Domain.Account;
 
+#region Services
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddInfrastructure(builder.Configuration);
+#endregion
 
+#region App
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -42,3 +45,4 @@ void SeedUserRoles(IApplicationBuilder app)
         seed.SeedRoles();
     }
 }
+#endregion

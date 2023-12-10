@@ -30,12 +30,14 @@ Core.Application - Dependencia com projeto Domain
 Infra.Data - Dependencia com projeto Domain
 Adapter.IoC - Dependencia com projeto Domain, Application, Infra.Data
 WebApp - Dependencia com projeto Infra.IoC
+WebApi - Dependencia com projeto Infra.IoC
 
 
 ******************************************************************************************
 
 # COMANDOS
 
+-> Listar Projetos: 					dotnet new list
 -> Criar Solução: 						dotnet new sln --name CleanArch
 -> Criar Projeto: 						dotnet new classlib --name Core.Domain
 -> Adiconar Projeto na Solution: 		dotnet sln CleanArch.sln add ./Core/Core.Domain/Core.Domain.csproj

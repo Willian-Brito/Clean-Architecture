@@ -38,7 +38,7 @@ public class CategoriesController : Controller
     }
 
     [HttpPost]
-    public async Task<IActionResult> Create(CategoryCreateDTO category)
+    public async Task<IActionResult> Create(CategoryDTO category)
     {
         if (ModelState.IsValid)
         {

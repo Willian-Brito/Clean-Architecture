@@ -1,11 +1,16 @@
-﻿using Core.Domain.Validations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using Core.Domain.Validations;
 
 namespace Core.Domain.Entities;
 
 public sealed class Category : EntityBase
 {
     #region Propriedades da Classe
-    public int? IdCategory { get; private set; }
+
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int IdCategory { get; private set; }
     public string? Name { get; private set; }
     public ICollection<Product>? Products { get; set; }
     #endregion
@@ -19,7 +24,7 @@ public sealed class Category : EntityBase
 
     public Category(int idCategory, string name)
     {
-        DomainExceptionValidation.When(idCategory <= 0, "IdCategory inválido!");
+        DomainExceptionValidation.When(idCategory < 0, "IdCategory inválido!");
         ValidateDomain(name);
 
         IdCategory = idCategory;

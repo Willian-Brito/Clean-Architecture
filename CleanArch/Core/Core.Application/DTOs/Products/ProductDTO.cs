@@ -1,6 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Core.Domain.Entities;
 
 namespace Core.Application.DTOs.Products;
@@ -37,6 +38,7 @@ public class ProductDTO
     [DisplayName("Imagem")]
     public string? Image { get; set; }
     
+    [JsonIgnore]
     public Category? Category { get; set; }
 
     [DisplayName("Categorias")]
