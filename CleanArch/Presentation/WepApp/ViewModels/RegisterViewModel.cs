@@ -13,6 +13,6 @@ public class RegisterViewModel
 
     [Required]
     [Display(Name = "Confirm password")]
-    [Compare("Password", ErrorMessage = "A senhas não correspondem!")]
+    [Compare("Password", ErrorMessage = "As senhas não correspondem!")]
     public string ConfirmPassword { get; set; }
 }

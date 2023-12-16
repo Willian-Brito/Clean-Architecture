@@ -13,12 +13,12 @@
 	* Infra.Data - EF Core, Contexto, Configurações, Migrations, Repository
 	
 [+] Adapters
-	* Adapter.IoC - Injeção de dependencia, registro dos serviços, tempo de vida
+	* Adapter.IoC - Injeção de dependencia, registro dos serviços, tempo de vida das injeções
 
 [+] Presentation	
 	* WebApp - MVC, Controllers, Views, Filtros, ViewModels
 
--> O Projeto WebUI é do tipo ASP.NET Core WebApp (MVC)
+-> O Projeto WebApp é do tipo ASP.NET Core WebApp (MVC)
 -> Os Demais projetos serão do tipo Class Library
 
 ******************************************************************************************
@@ -65,6 +65,15 @@ WebApi - Dependencia com projeto Infra.IoC
 [+] IoC
 	* dotnet add package AutoMapper.Extensions.Microsoft.DependencyInjection
 	* dotnet add package MediatR
+	* dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 7.0.0
+	* dotnet add package Swashbuckle.AspNetCore.Swagger --version 6.5.0
+	* dotnet add package Swashbuckle.AspNetCore.SwaggerGen --version 6.5.0
+	* dotnet add package Swashbuckle.AspNetCore.SwaggerUI --version 6.5.0
+
+[+] API
+	* dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 7.0.0
+	* dotnet add package Microsoft.IdentityModel.Tokens --version 7.0.3
+	* dotnet add package System.IdentityModel.Tokens.Jwt --version 7.0.3
 	
 ******************************************************************************************
 

@@ -82,3 +82,4 @@
 /home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WebApi/obj/Debug/net7.0/WebApi.pdb
 /home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WebApi/obj/Debug/net7.0/WebApi.genruntimeconfig.cache
 /home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WebApi/obj/Debug/net7.0/ref/WebApi.dll
+/home/h1s0k4/Área de trabalho/Projetos/Clean-Architecture/CleanArch/Presentation/WebApi/bin/Debug/net7.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

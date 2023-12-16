@@ -7,8 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddInfrastructureAPI(builder.Configuration);
 
 // Ativar autenticacao e validar o token
-// builder.Services.AddInfrastructureJWT(builder.Configuration);
-// builder.Services.AddInfrastructureSwagger();
+builder.Services.AddInfrastructureJWT(builder.Configuration);
+builder.Services.AddInfrastructureSwagger();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
@@ -52,7 +52,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UseStatusCodePages();
 app.UseAuthentication();
 app.UseAuthorization();
 

@@ -1,5 +1,7 @@
 using Core.Application.DTOs.Categories;
 using Core.Application.Interfaces;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components.Routing;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +9,7 @@ namespace WebApi.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize]
 public class CategoriesController : ControllerBase
 {
     private readonly ICategoryService _categoryService;
