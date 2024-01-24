@@ -86,6 +86,21 @@ Confirmar Alterações: 	dotnet ef database update
 Remover Migration: 		dotnet ef migrations remove
 Listar Migration:		dotnet ef migrations list
 
+******************************************************************************************
+
+# INJEÇÃO DE DEPENDÊNCIA
+
+Para utilizar o container de injeção de dependência nativo do .NET, basta utilizar a interface IServiceCollection do pacote Microsoft.Extensions.DependencyInjection e o próprio runtime (CLR) do .NET, cria as instâncias e injeta as dependências.
+
+Para fazer tudo isso funcionar, basta registrar via código os serviços, na classe Startup.cs no método ConfigureServices ou criar uma camada de injeção de dependência (IoC) e adicioanar um método de extensão para a interface IServiceCollection, para que sua camada de apresentação não dependa de códigos de infraestrutura como entity framework e classes repositórios, violando a regra de dependência.
+
+Na implementação da injeção de dependênica na ASP.NET Core, temos o conceito de lifetimes ou tempo de vida que especifica quando um objeto é criado ou recriado.
+
+* Transient (AddTransient): Cria os objetos a cada vez que forem injetados em alguma classe (instância).
+
+* Scoped (AddScoped): Cria os objetos uma vez por solicitação (request).
+
+* Singleton (AddSingleton): Cria os objetos apenas na primeira vez e será reutilizado durante todo o ciclo de vida da aplicação para todas as requests de todos os usuários.
 
 ******************************************************************************************
 
